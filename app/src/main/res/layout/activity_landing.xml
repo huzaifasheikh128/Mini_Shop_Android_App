@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shop_background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MINI SHOP"
+        android:textColor="@color/shop_accent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Mini Shop!"
+        android:textColor="@color/shop_text"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true">
+
+        <LinearLayout
+            android:id="@+id/cardProducts"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/shop_surface"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛍"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textColor="@color/shop_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardCategories"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/shop_surface"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📦"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textColor="@color/shop_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardCart"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/shop_surface"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛒"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Cart"
+                android:textColor="@color/shop_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardProfile"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/shop_surface"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="@color/shop_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

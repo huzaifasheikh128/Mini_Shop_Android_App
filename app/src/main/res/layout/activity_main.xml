@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shop_background"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MINI SHOP"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/shop_accent"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore Our Products"
+        android:textSize="18sp"
+        android:textColor="@color/shop_text"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignMargins">
+
+            <!-- Headphones -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/shop_surface"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎧"
+                    android:textSize="55sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headphones"
+                    android:textColor="@color/shop_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 2500"
+                    android:textColor="@color/shop_accent"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnHeadphones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!-- Smart Watch -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/shop_surface"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⌚"
+                    android:textSize="55sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart Watch"
+                    android:textColor="@color/shop_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 4500"
+                    android:textColor="@color/shop_accent"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnWatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!-- Sneakers -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/shop_surface"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👟"
+                    android:textSize="55sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sneakers"
+                    android:textColor="@color/shop_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 3500"
+                    android:textColor="@color/shop_accent"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnShoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!-- Backpack -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/shop_surface"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎒"
+                    android:textSize="55sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Backpack"
+                    android:textColor="@color/shop_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 1800"
+                    android:textColor="@color/shop_accent"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnBag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View My Cart"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
